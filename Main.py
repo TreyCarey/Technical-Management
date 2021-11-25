@@ -1,5 +1,4 @@
 #Import Dependencies
-
 #Tkinter is the GUI Framework i'm using
 from tkinter import *
 from tkinter.ttk import *
