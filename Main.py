@@ -18,6 +18,18 @@ master.title(programName)
 middleFrame = Frame(master)
 middleFrame.pack(fill = "both", expand = True, padx = 20, pady = 20)
 
+#--------------------------------------------BUTTON FUNCTIONS-----------------------------------------#
+#Button click actions
+def assetManagerClick():
+    print("Asset Manager Clicked")
+
+def inputListClick():
+    print("Input List Clicked")
+
+def stagePlotClicked():
+    print("Stage Plot Clicked")
+
+#------------------------------------------------BUTTONS----------------------------------------------#
 #Create Welcome Label
 welcomeLabel = Label(middleFrame, text = "Welcome to " + programName + "!")
 welcomeLabel.pack(side = TOP)
@@ -27,15 +39,15 @@ optionsText = Label(middleFrame, text = "Please choose one of the following opti
 optionsText.pack(side = TOP, pady = 20)
 
 #Launch Asset Manager
-assetManagerButton = Button(middleFrame, text = "Asset Manager")
+assetManagerButton = Button(middleFrame, text = "Asset Manager", command = assetManagerClick)
 assetManagerButton.pack(side = TOP, fill = "x")
 
 #Input List Button
-inputListButton = Button(middleFrame, text = "Input List")
+inputListButton = Button(middleFrame, text = "Input List", command = inputListClick)
 inputListButton.pack(side = TOP, fill = "x")
 
 #Stage Plot Button
-stagePlotButton = Button(middleFrame, text = "Stage Plot")
+stagePlotButton = Button(middleFrame, text = "Stage Plot", command = stagePlotClicked)
 stagePlotButton.pack(side = TOP, fill = "x")
 
 #Create Versioning Label
